@@ -1,0 +1,2 @@
+Assets/webrtc/Runtime/Plugins/xros~/webrtc.framework/webrtc filter=lfs diff=lfs merge=lfs -text
+Assets/webrtc/Runtime/Plugins/simxros/webrtc.framework/webrtc filter=lfs diff=lfs merge=lfs -text
