@@ -1,4 +1,5 @@
-Assets/webrtc/Runtime/Plugins
+Assets/webrtc/Runtime/Plugins/Android*
+Assets/webrtc/Runtime/Plugins/x86_64*
 build*
 /Temp
 /Library
