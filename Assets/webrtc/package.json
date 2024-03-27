@@ -1,0 +1,35 @@
+{
+  "name": "com.unity.webrtc",
+  "displayName": "WebRTC",
+  "version": "3.0.0-pre.7",
+  "unity": "2020.3",
+  "description": "The WebRTC package provides browsers and mobile applications with Real-Time Communications (RTC) capabilities.",
+  "keywords": [
+    "webrtc",
+    "web"
+  ],
+  "dependencies": {
+    "com.unity.modules.jsonserialize": "1.0.0",
+    "com.unity.editorcoroutines": "1.0.0",
+    "com.unity.modules.audio": "1.0.0"
+  },
+  "samples": [
+    {
+      "displayName": "Example",
+      "description": "WebRTC sample",
+      "path": "Samples~"
+    }
+  ],
+  "_upm": {
+    "changelog": "### Added\n\n- Add **Android x86_64** support experimentally.\n- Add an property `.CanTrickleIceCandidates` in `RTCPeerConnection` class.\n- Add an configurable logger in `WebRTC` class.\n- Support scale resolution for NVIDIA H.264 codec.\n- Support simulcast for NVIDIA H.264 codec.\n- Add an property `SyncApplicationFramerate` in `RTCRtpSender` class to improve latency of video streaming.\n\n### Changed\n\n- Upgrade libwebrtc [M116](https://groups.google.com/g/discuss-webrtc/c/bEsO8Lz7psE).\n- Change Android API minimum level to **23** because the API level **22** is obsoleted on Unity2020.3 LTS.\n- Add `RTCDataChannel.onError` event.\n- Change a constructor of `VideoStreamTrack` to make simple to flip video texture.\n\n### Fixed\n\n- Fix an issue when setting a scale factor of video encoding to a fractional scaling ratio.\n- Fix an occasional crash issue when using hardware encoder with D3D11 graphic device.\n- Fix an crash when `nvEncodeAPI64.dll` is not found on Windows.\n- Optimize audio sampling when using mute."
+  },
+  "upmCi": {
+    "footprint": "e488c775d4f3d5f679b14338aba4f8f1f1ca93d0"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.webrtc@3.0/manual/index.html",
+  "repository": {
+    "url": "https://github.com/Unity-Technologies/com.unity.webrtc.git",
+    "type": "git",
+    "revision": "6d567767088482383d74c6d59354fde186cb9990"
+  }
+}
