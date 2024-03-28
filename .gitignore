@@ -1,5 +1,19 @@
+#plugins are large. ignored unless specifically force added
+Assets/webrtc/Runtime/Plugins/macOS/libwebrtc.dylib
+Assets/webrtc/Runtime/Plugins/iOS/webrtc.framework
+Assets/webrtc/Runtime/Plugins/simxros/webrtc.framework
+Assets/webrtc/Runtime/Plugins/xros~/webrtc.framework
+
+#we push these only as xros~
+Assets/webrtc/Runtime/Plugins/xros.meta
+Assets/webrtc/Runtime/Plugins/xros/*
+#avoid pushing dSyms they are huge
+Assets/webrtc/Runtime/Plugins/xros~/webrtc.framework.dSYM*
+Assets/webrtc/Runtime/Plugins/simxros/webrtc.framework.dSYM*
+#other plugins
 Assets/webrtc/Runtime/Plugins/Android*
 Assets/webrtc/Runtime/Plugins/x86_64*
+
 build*
 /Temp
 /Library
